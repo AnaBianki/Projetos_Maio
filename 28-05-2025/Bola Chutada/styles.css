@@ -1,0 +1,51 @@
+:root {
+    --bg: #f0f0f0;
+    --bola: #ff4081;
+}
+body.dark {
+    --bg: #121212;
+    --bola: #00e676;
+}
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bola {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: var(--bola);
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.bola.dragging {
+    cursor: grabbing;
+}
+button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--bola);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+}
+button:hover {
+    opacity: 0.9;
+}

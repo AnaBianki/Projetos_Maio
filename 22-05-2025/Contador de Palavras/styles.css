@@ -1,0 +1,57 @@
+:root {
+    --bg: #ffffff;
+    --text: #222222;
+    --card: #f5f5f5;
+}
+body.dark {
+    --bg: #121212;
+    --text: #eeeeee;
+    --card: #1e1e1e;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#toggleTheme {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: var(--card);
+    color: var(--text);
+    font-size: 16px;
+    resize: vertical;
+    transition: background 0.3s, color 0.3s;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    background: var(--card);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+}

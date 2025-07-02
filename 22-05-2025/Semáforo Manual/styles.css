@@ -1,0 +1,80 @@
+:root {
+    --bg: #f4f4f4;
+    --text: #222;
+    --card: #fff;
+}
+body.dark {
+    --bg: #121212;
+    --text: #eee;
+    --card: #1e1e1e;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+}
+.header {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#toggleTheme {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+}
+.semaforo {
+    width: 100px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0 20px;
+}
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #333;
+    opacity: 0.2;
+    transition: opacity 0.3s;
+}
+.light.on {
+    opacity: 1;
+}
+.red.light.on {background: red;}
+.yellow.light.on {background: yellow;}
+.green.light.on {background: green;}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2;
+}
+.controls button:hover {
+    transform: scale(1.05);
+}
+#btnRed { background: red; color: white;}
+#btnYellow { background: goldenrod; color: white;}
+#btnGreen { background: green; color: white;}

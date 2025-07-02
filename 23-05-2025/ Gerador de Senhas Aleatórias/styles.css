@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: linear-gradient(to right, #e0f2f1, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+h1 {
+    color: #00796b;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+#passwordResult {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+#copyBtn {
+background: #0f9484;
+color: white;
+border: none;
+padding: 8px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.options {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: block;
+    margin: 6px 0;
+}
+
+#generateBtn {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.8s;
+}
+
+#generateBtn:hover {
+    background-color: #004d40;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

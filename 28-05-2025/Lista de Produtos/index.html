@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+        <title>Lista de Produtos</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lista de Produtos</h1>
+            <ul id="listaProdutos">
+            </ul>
+            <div id="detalhesProduto" class="detalhes-oculto">
+                <h2>Detalhes do Produto</h2>
+                <p><strong class="nome-produto"></strong></p>
+                <p>Preço: R$ <span class="preco-produto"></span></p>
+                <p>Quantidade:
+                    <span class="quantidade-produto"></span></p>
+                    <button onclick="esconderDetalhes()">Voltar</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

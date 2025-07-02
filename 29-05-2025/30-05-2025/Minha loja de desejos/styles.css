@@ -1,0 +1,106 @@
+ :root {
+    --bg: #f9f9f9;
+    --text: #222;
+    --card: #fff;
+    --accent: #ff5722;
+    --header: #fff;
+}
+body.dark {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1e1e1e;
+    --accent: #ff9800;
+    --header: #1a1a1a;
+}
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Sagoe UI', sans-serif;
+}
+header {
+    background: var(--header);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+header button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+}
+.container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.formulario {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.formulario input {
+    flex: 1 1 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--text);
+}
+.formulario button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.formulario button:hover {
+    opacity: 0.9;
+}
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+.grade-produtos .produto {
+    background: var(--card);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.produto strong {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.produto p {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    color: #666;
+}
+.produto button {
+    align-self: flex-end;
+    background: crimson;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.produto button:hover {
+    background: #b30000;
+}

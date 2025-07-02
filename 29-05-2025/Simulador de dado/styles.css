@@ -1,0 +1,48 @@
+:root {
+    --bg: #f8f8f8;
+    --text: #222;
+    --card: #fff;
+    --primary: #2980b9;
+}
+body.dark {
+    --bg: #121212;
+    --text: #eee;
+    --card: #1e1e1e;
+    --primary: #3498db;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+img {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+    transition: transform 0.2s ease;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background: #1f6ea6;
+}

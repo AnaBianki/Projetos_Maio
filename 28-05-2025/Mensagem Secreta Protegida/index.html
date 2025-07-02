@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+        <title>Mensagem Secreta Protegida</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>🔒 Mensagem Secreta</h1>
+            <textarea id="mensagem"
+            placeholder="Digite sua mensagem secreta..."></textarea>
+            <input type="password" id="senha"
+            placeholder="Digite uma senha para proteger" />
+            <div class="botao-container">
+                <button id="toggleBtn">Mostrar</button>
+                <button id="toggleTheme">🌙</button>
+            </div>
+            <div id="mensagemSecreta" class="escondido"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

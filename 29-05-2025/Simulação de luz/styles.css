@@ -1,0 +1,57 @@
+:root {
+    --bg-dark: #1e1e1e;
+    --bg-light: #f0f0f0;
+    --lampada-desligada: #555;
+    --lampada-ligada: #ffd700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s ease;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.lampada {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: var(--lampada-desligada);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.5s, box-shadow 0.5s;
+}
+
+.luz-ativa {
+    background: var(--bg-light);
+}
+
+.luz-ativa .lampada {
+    background: var(--lampada-ligada);
+    box-shadow: 0 0 120px 30px var(--lampada-ligada);
+}
+
+button {
+    background: #a7a6a6;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 100px;
+}
+
+button:hover {
+    background: #666;
+}

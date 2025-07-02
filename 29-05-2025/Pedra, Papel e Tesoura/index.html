@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+        <title>Pedra, Papel e Tesoura</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Pedra, Papel e Tesoura</h1>
+            <div class="scoreboard">
+                <div class="player">
+                    <p> 👤 Jogador</p>
+                    <p><span id="playerScore">0</span></p>
+                </div>
+                <div class="computer">
+                  <p>💻 Computador</p>
+                  <p><span id="computerScore">0</span></p>
+                </div>
+            </div>
+            <div class="battlefield">
+                <div class="player-side">
+                    <button class="choice" onclick="play('pedra')">🪨</button>
+                      <button class="choice" onclick="play('papel')">📃</button>
+                        <button class="choice" onclick="play('tesoura')">✂️</button>
+                </div>
+                <div class="vs">⚔️</div>
+                <div class="computer-side">
+                    <button class="choice disabled">🪨</button>
+                    <button class="choice disabled">📃</button>
+                     <button class="choice disabled">✂️</button>
+                </div>
+            </div>
+            <div class="result">
+                <p id="playerChoice"></p>
+                <p id="computerChoice"></p>
+                <h2 id="winner"></h2>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
