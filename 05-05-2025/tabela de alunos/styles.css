@@ -1,0 +1,24 @@
+body {
+    font-family: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #2c3e50;
+    text-align:center;
+}
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #6ebdf1;
+    color: #fff;
+}

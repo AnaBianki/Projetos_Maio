@@ -1,0 +1,33 @@
+.galeria {
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.imagem-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#imagemAtual {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.navegacao button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.navegacao button:hover {
+    background-color: #e0e0e0;
+}

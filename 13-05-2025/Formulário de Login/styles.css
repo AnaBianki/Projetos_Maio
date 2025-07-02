@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-container {
+    background-color: #b2b0b3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+h2 {
+    color:#333;
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #0f0f0f;
+    text-align: left;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #979090;
+    border-radius: 4px;
+}
+button {
+    background-color: #802faf;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: progress;
+    width: 100%;
+}
+button:hover {
+    background-color: #3c7cb8;
+}
+body {
+    background-image: url('img/monte.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
